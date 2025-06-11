@@ -1,12 +1,15 @@
 import React from 'react';
 import Header from './components/Header';
+import Contenedor from './components/Contenedor';
+import SkillsSection from './components/SkillsSection';
 
 function App() {
 
   return (
-    <div className="bg-gradient-to-b from-purple-800 to-gray-950 min-h-screen flex justify-center">
+    <div className="bg-black min-h-screen flex justify-center text-white courier">
       <div>
-        <Header />
+        <Header/>
+        <SkillsSection/>
       </div>
     </div>
   )

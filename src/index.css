@@ -1,1 +1,56 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'CourierPrime';
+  src: url('./fonts/CourierPrime-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.courier {
+  font-family: 'CourierPrime', monospace;
+}
+
+@font-face {
+  font-family: 'Stoked';
+  src: url('./fonts/stoked.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.stoked {
+  font-family: 'Stoked', sans-serif;
+}
+
+@layer utilities {
+  .card-wrapper {
+    @apply relative overflow-hidden rounded-2xl bg-radial;
+  }
+  .card-content {
+    @apply absolute left-[1px] top-[1px]
+    h-[calc(100%-2px)] w-[calc(100%-2px)]
+    rounded-2xl bg-black;
+  }
+}
+
+.card-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -25%;
+  left: -25%;
+  width: 150%;
+  height: 150%;
+  background: conic-gradient(
+    rgba(54, 65, 83, 0.4) 0deg,
+    rgba(160, 160, 160, 0.4) 0deg,
+    transparent 80deg
+  );
+  animation: border-spin 7s linear infinite;
+  border-radius: 1rem;
+}
+
+@keyframes border-spin {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
