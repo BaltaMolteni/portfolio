@@ -12,14 +12,15 @@
 }
 
 @font-face {
-  font-family: 'Stoked';
-  src: url('./fonts/stoked.ttf') format('truetype');
+  font-family: 'DMMono';
+  src: url('./fonts/DMMono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-.stoked {
-  font-family: 'Stoked', sans-serif;
+.dm {
+  font-family: 'DMMono', monospace;
+  color: white;
 }
 
 @layer utilities {
