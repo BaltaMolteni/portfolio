@@ -19,11 +19,11 @@ function SkillsSection () {
                 <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-light tracking-wider">SKILLS</h1>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12  ;">
-                <SkillCard title={"React"} text={"Hola se react"} icon={reactIcon}/>
-                <SkillCard title={"Django"} text={"Hola se react"} icon={djangoIcon}/>
-                <SkillCard title={"Python"} text={"Hola se react"} icon={pythonIcon}/>
-                <SkillCard title={"Git"} text={"Hola se react"} icon={gitIcon} />
-                <SkillCard title={"PostreSQL"} text={"Hola se react"} icon={sqlIcon}/> 
+                <SkillCard title={"React"} icon={reactIcon}/>
+                <SkillCard title={"Django"} icon={djangoIcon}/>
+                <SkillCard title={"Python"} icon={pythonIcon}/>
+                <SkillCard title={"Git"}  icon={gitIcon} />
+                <SkillCard title={"PostreSQL"} icon={sqlIcon}/> 
             </div>
         </div>
         //     </div>
