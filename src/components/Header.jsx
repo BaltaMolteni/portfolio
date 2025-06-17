@@ -22,18 +22,12 @@ function Header() {
                 </a>
             </div>
             {/* MODIFICAR EL LINK */}
-            {/* <a href='' rel="noopener noreferrer">
-                <div className='flex flex-row mx-2 mt-4 w-fit border border-neutral-500 rounded-xl p-1 text-neutral-500 hover:border-neutral-600 hover:text-neutral-600'>
-                    <File className='mr-2'/> Descargar mi CV
-                </div>
-            </a>  */}
-            <div
-                className="px-4 py-2 mt-4 w-fit  text-white bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-full text-sm font-medium"
-            > 
-                <a href='' rel="noopener noreferrer">
-                    Descarga mi CV
+           <div className="px-4 py-2 mt-5 w-fit text-white bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-full text-sm font-medium transition-transform duration-300 hover:scale-105" >
+                <a href='' rel="noopener noreferrer" className='flex flex-row justify-center items-center'>
+                    <File className='mr-2'/> Descarga mi CV
                 </a>
             </div>
+
                 
         </section>
     );

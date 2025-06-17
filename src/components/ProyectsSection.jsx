@@ -3,74 +3,74 @@ import { ArrowUpRight, X, ExternalLink, Calendar, Users } from 'lucide-react';
 
 function ProjectsSection() {
   const [selectedProject, setSelectedProject] = useState(null);
-
   const projects = [
     {
       id: 1,
-      title: "Savage Nation",
-      subtitle: "Digital Collectible",
-      image: "/api/placeholder/600/400",
+      title: "Turnero Clínica Odontológica",
+      subtitle: "Sistema de gestión de turnos",
+      image: "/api/placeholder/600/400", // ❗ Estimado, reemplazalo por el real
       className: "col-span-2 row-span-2",
-      bgGradient: "from-red-500 via-pink-500 to-purple-600",
-      description: "A revolutionary NFT platform that connects digital artists with collectors worldwide. Built with cutting-edge blockchain technology to ensure secure and transparent transactions.",
-      technologies: ["React", "Solidity", "Web3.js", "IPFS", "Ethereum"],
-      duration: "6 months",
-      team: "5 developers",
+      bgGradient: "from-blue-500 via-cyan-500 to-teal-600",
+      description: "Aplicación web desarrollada para la gestión de turnos de una clínica odontológica. Incluye autenticación, vistas para profesionales y pacientes, y panel administrativo.",
+      technologies: ["Django", "React", "PostgreSQL", "Tailwind CSS", "Nginx"],
+      duration: "3 meses (estimado)",
+      team: "1 desarrollador (individual)",
       features: [
-        "Smart contract integration",
-        "Decentralized storage",
-        "Real-time marketplace",
-        "Artist royalty system"
+        "Registro y autenticación de usuarios",
+        "Asignación de turnos por profesional",
+        "Panel de control administrativo",
+        "Integración con base de datos PostgreSQL"
       ],
-      liveUrl: "https://savagenation.com",
-      challenges: "Implementing gas-efficient smart contracts and creating an intuitive user experience for both crypto-native and newcomer users."
+      liveUrl: "#", // ❗ Estimado
+      challenges: "Optimizar consultas a la base de datos en tiempo real y lograr una interfaz clara para múltiples perfiles de usuario."
     },
     {
       id: 2,
-      title: "Gooky Crunch",
-      subtitle: "Ecommerce",
-      image: "/api/placeholder/400/300",
+      title: "Accesibilidad para ArSens",
+      subtitle: "Software para personas no videntes",
+      image: "/images/arsens.png", 
       className: "col-span-1 row-span-1",
-      bgGradient: "from-purple-600 via-blue-600 to-indigo-700",
-      description: "A modern e-commerce platform specializing in artisanal snacks and gourmet treats. Features advanced inventory management and personalized recommendations.",
-      technologies: ["Next.js", "Stripe", "PostgreSQL", "Redis", "AWS"],
-      duration: "4 months",
-      team: "3 developers",
+      bgGradient: "from-gray-800 via-gray-600 to-zinc-700",
+      description: "Módulo de accesibilidad para el software científico ArSens. Implementa navegación con teclado y lector de pantalla para usuarios con discapacidad visual.",
+      technologies: ["Python", "Tkinter", "TTS", "Playwright"],
+      duration: "En curso",
+      team: "Grupo de investigación (IEC - UTN)",
       features: [
-        "Real-time inventory tracking",
-        "AI-powered recommendations",
-        "Multi-currency support",
-        "Advanced analytics dashboard"
+        "Soporte para navegación con teclado",
+        "Integración con lectores de pantalla",
+        "Feedback sonoro en la UI",
+        "Testeo automatizado con Playwright"
       ],
-      liveUrl: "https://gookycrunch.com",
-      challenges: "Scaling the recommendation engine to handle thousands of products while maintaining fast response times."
+      liveUrl: "#", // ❗ Estimado
+      challenges: "Garantizar usabilidad sin mouse y compatibilidad con lectores de pantalla en entornos científicos complejos."
     },
     {
       id: 3,
-      title: "Kaison Talent",
-      subtitle: "Marketing Agency",
-      image: "/api/placeholder/400/300",
+      title: "Gestor para Centro de Kinesiología",
+      subtitle: "Plataforma clínica universitaria",
+      image: "/api/placeholder/400/300", // ❗ Estimado
       className: "col-span-1 row-span-1",
-      bgGradient: "from-gray-300 via-gray-400 to-gray-500",
-      description: "A comprehensive digital marketing platform that helps businesses manage campaigns, track performance, and optimize their marketing strategies across multiple channels.",
-      technologies: ["Vue.js", "Node.js", "MongoDB", "Docker", "Google Analytics API"],
-      duration: "8 months",
-      team: "7 developers",
+      bgGradient: "from-green-600 via-emerald-500 to-lime-400",
+      description: "Aplicación web para la gestión de historiales clínicos y turnos en un centro de kinesiología. Integra distintos roles y funcionalidades específicas.",
+      technologies: ["React", "Django", "PostgreSQL", "Tailwind CSS"],
+      duration: "4 meses (estimado)",
+      team: "2 desarrolladores (UTN)",
       features: [
-        "Campaign management",
-        "Multi-channel tracking",
-        "Performance analytics",
-        "Client reporting automation"
+        "Carga y consulta de historiales clínicos",
+        "Asignación de citas médicas",
+        "Paneles personalizados por rol",
+        "Exportación de datos"
       ],
-      liveUrl: "https://kaisontalent.com",
-      challenges: "Integrating with multiple third-party APIs while maintaining data consistency and real-time synchronization."
+      liveUrl: "#", // ❗ Estimado
+      challenges: "Diseñar una arquitectura escalable para múltiples tipos de usuario e integrar la información clínica de forma segura."
     }
   ];
 
+
   return (
-    <section className="w-full max-w-6xl mx-auto px-4 py-16">
+    <section className="w-full mx-auto px-4 py-16 md:px-12">
       {/* Header */}
-      <div className="text-center mb-12">
+      <div className=" mb-12">
         <h2 className="text-white text-4xl md:text-5xl font-light tracking-wider">
           MIS TRABAJOS
         </h2>
@@ -119,7 +119,6 @@ function ProjectsSection() {
             className="bg-gray-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto relative"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Close button */}
             <button
               onClick={() => setSelectedProject(null)}
               className="absolute top-4 right-4 z-10 w-10 h-10 bg-white/10 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/20 transition-colors"
@@ -127,7 +126,6 @@ function ProjectsSection() {
               <X className="w-5 h-5 text-white" />
             </button>
 
-            {/* Header with gradient */}
             <div className={`h-64 bg-gradient-to-br ${selectedProject.bgGradient} relative overflow-hidden rounded-t-2xl`}>
               <div className="absolute inset-0 bg-black/30" />
               <div className="absolute bottom-6 left-6 text-white">
@@ -136,28 +134,26 @@ function ProjectsSection() {
               </div>
             </div>
 
-            {/* Content */}
-            <div className="p-8 text-white">
-              {/* Project info grid */}
+            <div className="p-8 text-white bg-black">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="flex items-center space-x-3">
                   <Calendar className="w-5 h-5 text-blue-400" />
                   <div>
-                    <p className="text-sm text-gray-400">Duration</p>
+                    <p className="text-sm text-gray-400">Duración</p>
                     <p className="font-medium">{selectedProject.duration}</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Users className="w-5 h-5 text-green-400" />
                   <div>
-                    <p className="text-sm text-gray-400">Team Size</p>
+                    <p className="text-sm text-gray-400">Tamaño de Equipo</p>
                     <p className="font-medium">{selectedProject.team}</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <ExternalLink className="w-5 h-5 text-purple-400" />
                   <div>
-                    <p className="text-sm text-gray-400">Live Site</p>
+                    <p className="text-sm text-gray-400">Sitio</p>
                     <a 
                       href={selectedProject.liveUrl} 
                       target="_blank" 
@@ -170,15 +166,13 @@ function ProjectsSection() {
                 </div>
               </div>
 
-              {/* Description */}
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4">About the Project</h3>
+                <h3 className="text-2xl font-semibold mb-4">Acerca del Proyecto</h3>
                 <p className="text-gray-300 leading-relaxed text-lg">{selectedProject.description}</p>
               </div>
 
-              {/* Technologies */}
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4">Technologies Used</h3>
+                <h3 className="text-2xl font-semibold mb-4">Tecnologías Utilizadas</h3>
                 <div className="flex flex-wrap gap-3">
                   {selectedProject.technologies.map((tech, index) => (
                     <span
@@ -191,9 +185,8 @@ function ProjectsSection() {
                 </div>
               </div>
 
-              {/* Key Features */}
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold mb-4">Key Features</h3>
+                <h3 className="text-2xl font-semibold mb-4">Características Principales</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {selectedProject.features.map((feature, index) => (
                     <div key={index} className="flex items-center space-x-3">
@@ -204,9 +197,8 @@ function ProjectsSection() {
                 </div>
               </div>
 
-              {/* Challenges */}
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Technical Challenges</h3>
+                <h3 className="text-2xl font-semibold mb-4">Desafíos Técnicos</h3>
                 <p className="text-gray-300 leading-relaxed">{selectedProject.challenges}</p>
               </div>
             </div>
