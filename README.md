@@ -1,12 +1,21 @@
-# React + Vite
+# 🌐 Portfolio | Baltazar Molteni
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido a mi portfolio personal, donde muestro proyectos que combinan diseño, funcionalidad y eficiencia. Está desarrollado con **React** y **Tailwind CSS**.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologías principales
+- React · Tailwind CSS · TypeScript
+- Django · PostgreSQL
+- Docker · Git · Playwright
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧩 Proyectos destacados
+- 🦷 Turnero Web para Clínica Odontológica
+- 👁️ Accesibilidad total para software científico
+- 🏥 Plataforma de gestión para centro de kinesiología
 
-## Expanding the ESLint configuration
+## 📫 Contacto
+- [LinkedIn](https://www.linkedin.com/in/baltazar-molteni-975087250/)
+- [Email](mailto:baltazarmolteni04@gmail.com)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+> Este portfolio está en constante evolución. ¡Gracias por visitar!
