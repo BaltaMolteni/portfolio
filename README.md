@@ -1,6 +1,6 @@
 # 🌐 Portfolio | Baltazar Molteni
 
-Bienvenido a mi portfolio personal, donde muestro proyectos que combinan diseño, funcionalidad y eficiencia. Está desarrollado con **React**, **Tailwind CSS** y un backend en **Django** para algunos módulos de datos.
+Bienvenido a mi portfolio personal, donde muestro proyectos que combinan diseño, funcionalidad y eficiencia. Está desarrollado con **React** y **Tailwind CSS**.
 
 ## 🚀 Tecnologías principales
 - React · Tailwind CSS · TypeScript
