@@ -22,11 +22,17 @@ function Header() {
                 </a>
             </div>
             {/* MODIFICAR EL LINK */}
-           <div className="px-4 py-2 mt-5 w-fit text-white bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-full text-sm font-medium transition-transform duration-300 hover:scale-105" >
-                <a href='' rel="noopener noreferrer" className='flex flex-row justify-center items-center'>
-                    <File className='mr-2'/> Descarga mi CV
+           <div className="px-4 py-2 mt-5 w-fit text-white bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 rounded-full text-sm font-medium transition-transform duration-300 hover:scale-105">
+                <a
+                    href="/CV-Baltazar-Molteni.pdf"
+                    download
+                    rel="noopener noreferrer"
+                    className="flex flex-row justify-center items-center"
+                >
+                    <File className="mr-2" /> Descarga mi CV
                 </a>
             </div>
+
             <div className="mt-10 flex justify-center items-center">
                 <ScrollCircle/>
             </div>
