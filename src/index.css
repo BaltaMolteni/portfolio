@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: 'CourierPrime';
   src: url('./fonts/CourierPrime-Regular.ttf') format('truetype');

@@ -1,7 +1,7 @@
 import { File } from 'lucide-react';
 import { SiGithub, SiLinkedin } from 'react-icons/si';
+import ScrollCircle from './ScrollCircle';
 
-// cambiar class de iconos
 
 function Header() {
     return (
@@ -12,7 +12,7 @@ function Header() {
              <h1 className="text-2xl text-neutral-300 sm:text-3xl md:text-4xl mb-6 font-light tracking-wider">
                 Analista de Sistemas | Desarrollador Full Stack
             </h1>
-            <p className="text-xl font-extralight text-neutral-400">Soy un analista de sistemas de 20 años con sólidos conocimientos en desarrollo de software y diseño de soluciones tecnológicas. Me especializo en analizar, modelar y optimizar sistemas para resolver problemas del mundo real. Me apasiona aprender nuevas tecnologías y mejorar mis habilidades en la creación de soluciones eficientes y funcionales.</p>
+            <p className="text-xl font-extralight text-neutral-400">Analista de Sistemas y estudiante avanzado de Ingeniería en Sistemas en la UTN FRLP. Cuento con experiencia en desarrollo Full-stack, especializado en la creación de soluciones web con Python, Django y React. Mi enfoque principal es el análisis y diseño de sistemas para resolver problemas complejos, con experiencia destacada en el desarrollo de software accesible.</p>
             <div className="flex items-center gap-4 mt-5">
                 <a href="https://github.com/BaltaMolteni" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                     <SiGithub className="h-6 w-6 hover:-translate-y-1 hover:transition-transform" color='white' />
@@ -27,8 +27,9 @@ function Header() {
                     <File className='mr-2'/> Descarga mi CV
                 </a>
             </div>
-
-                
+            <div className="mt-10 flex justify-center items-center">
+                <ScrollCircle/>
+            </div>
         </section>
     );
 }
