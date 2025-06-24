@@ -28,7 +28,7 @@ function ProjectsSection() {
       title: "Accesibilidad para ArSens",
       subtitle: "Software para personas no videntes",
       image: "images/arsens.png", 
-      className: "col-span-1 row-span-1",
+      className: "col-span-2 row-span-2",
       bgGradient: "from-gray-800 via-gray-600 to-zinc-700",
       description: "Módulo de accesibilidad para el software científico ArSens. Implementa navegación con teclado y lector de pantalla para usuarios con discapacidad visual.",
       technologies: ["Python", "Tkinter", "TTS", "Playwright"],
@@ -47,7 +47,7 @@ function ProjectsSection() {
       title: "Gestor para Centro de Kinesiología",
       subtitle: "Plataforma clínica universitaria",
       image: "images/kine-consultas.png",
-      className: "col-span-1 row-span-1",
+      className: "col-span-2 row-span-2",
       bgGradient: "from-green-600 via-emerald-500 to-lime-400",
       description: "Aplicación web para la gestión de historiales clínicos y turnos en un centro de kinesiología. Integra distintos roles y funcionalidades específicas.",
       technologies: ["React", "Django", "PostgreSQL", "Tailwind CSS"],
@@ -66,14 +66,12 @@ function ProjectsSection() {
 
   return (
     <section id="proyectos" className="w-full mx-auto px-4 py-16 md:px-12">
-      {/* Header */}
       <div className=" mb-12">
         <h2 className="text-white text-4xl md:text-5xl font-light tracking-wider">
           MIS TRABAJOS
         </h2>
       </div>
 
-      {/* Grid Container */}
       <div className="grid grid-cols-2 gap-4 h-[600px]">
         {projects.map((project) => (
           <div
@@ -81,22 +79,18 @@ function ProjectsSection() {
             onClick={() => setSelectedProject(project)}
             className={`${project.className} relative group cursor-pointer overflow-hidden rounded-2xl transition-transform duration-300 hover:scale-[1.02]`}
           >
-            {/* Background*/}
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{ backgroundImage: `url(${project.image})` }}
             />
             
-            {/* Content overlay */}
             <div className="absolute inset-0 flex flex-col justify-between p-6 text-white">
-              {/* Arrow icon */}
               <div className="flex justify-end">
                 <div className="w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center transition-all duration-300 group-hover:bg-white/30 group-hover:scale-110">
                   <ArrowUpRight className="w-5 h-5" />
                 </div>
               </div>
               
-              {/* Project info */}
               <div className="space-y-2">
                 <h3 className="text-xl font-medium">
                   <span className="bg-black/30 backdrop-blur-sm rounded-full px-4 py-1 inline-block">
@@ -111,13 +105,11 @@ function ProjectsSection() {
               </div>
             </div>
 
-            {/* Hover effect */}
             <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
         ))}
       </div>
 
-      {/* Modal */}
       {selectedProject && (
         <div 
           className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"

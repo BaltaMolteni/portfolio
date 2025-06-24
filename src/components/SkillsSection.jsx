@@ -112,16 +112,16 @@ const categories = {
 
 function SkillsSection() {
   return (
-    <div className="w-full mb-30 t-20 mx-auto px-6 md:px-12">
+    <div className="w-full mb-30 mx-auto px-4 md:px-12">
       <div className="mb-16">
         <h1 className="text-white text-3xl md:text-4xl lg:text-5xl font-light tracking-wider">
           SKILLS
         </h1>
       </div>
       {Object.entries(categories).map(([category, skills]) => (
-        <div key={category} className="mb-12">
+        <div key={category} className="mb-12 w-full">
             <h2 className="text-white text-2xl md:text-3xl font-semibold mb-4">{category}</h2>
-            <div className="inline-grid mx-auto grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-10 justify-items-center items-center">
             {skills.map((skill, index) => (
               <SkillCard
                 key={index}

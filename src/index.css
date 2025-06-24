@@ -47,7 +47,7 @@ html {
   height: 150%;
   background: conic-gradient(
     rgba(54, 65, 83, 0.4) 0deg,
-    rgba(152, 16, 250,0.4) 0deg,
+    rgba(255, 255, 255, 0.4) 0deg,
     transparent 80deg
   );
   animation: border-spin 7s linear infinite;
